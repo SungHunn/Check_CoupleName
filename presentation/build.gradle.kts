@@ -33,6 +33,7 @@ android {
 
     buildFeatures {
         dataBinding = true
+        viewBinding = true
     }
 }
 
@@ -47,6 +48,11 @@ dependencies {
     implementation (AndroidX.LEGACY)
     implementation (Firebase.FIREBASE_DATABASE_KTX)
     implementation (Firebase.FIREBASE_FIRESTORE_KTX)
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.5.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
     testImplementation (TestTool.JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_ESPRESSO)
