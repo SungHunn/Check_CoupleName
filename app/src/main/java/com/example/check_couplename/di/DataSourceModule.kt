@@ -22,8 +22,10 @@ class DataSourceModule() {
     @Singleton
     fun provideMainDataSource(
         loveCalculatorApi: LoveCalculatorApi,
+        firebaseRtdb: FirebaseDatabase,
+        fireStore: FirebaseFirestore
     ) : MainDataSource{
-        return MainDataSourceimpl(loveCalculatorApi)
+        return MainDataSourceimpl(loveCalculatorApi , firebaseRtdb , fireStore)
     }
 
 

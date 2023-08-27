@@ -14,41 +14,55 @@
         android:layout_height="match_parent"
         tools:context=".view.ResultFragment">
 
-        <TextView
-            android:id="@+id/womanText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="woman"
-            android:textSize="25sp"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="@id/resultImage"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
             app:layout_constraintBottom_toTopOf="@id/resultImage"
-            android:layout_marginBottom="50dp"/>
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/loveImage"
-            app:layout_constraintEnd_toStartOf="@id/manText"
-            android:src="@drawable/lovess"
-            app:layout_constraintTop_toTopOf="@id/manText"
-            app:layout_constraintEnd_toEndOf="@id/manText"
-            app:layout_constraintStart_toEndOf="@id/womanText"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            app:layout_constraintBottom_toBottomOf="@id/womanText"/>
+            >
 
-        <TextView
-            android:id="@+id/manText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="man"
-            android:textSize="25sp"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@id/resultImage"
-            app:layout_constraintBottom_toTopOf="@id/resultImage"
-            android:layout_marginBottom="50dp"/>
+            <TextView
+                android:id="@+id/womanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="woman"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+
+               />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/loveImage"
+                app:layout_constraintEnd_toStartOf="@id/manText"
+                android:src="@drawable/lovess"
+                app:layout_constraintTop_toTopOf="@id/manText"
+                app:layout_constraintEnd_toEndOf="@id/manText"
+                app:layout_constraintStart_toEndOf="@id/womanText"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/womanText"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:id="@+id/manText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="man"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+
+                />
+
+        </LinearLayout>
+
+
 
 
         <ImageView
