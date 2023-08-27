@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_man_name" >
         <action
             android:id="@+id/action_manNameFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/side_in_right"
+            app:exitAnim="@anim/side_out_left"
+            app:popEnterAnim="@anim/side_in_left"
+            app:popExitAnim="@anim/side_out_right" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -21,7 +25,11 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_womanNameFragment"
-            app:destination="@id/womanNameFragment" />
+            app:destination="@id/womanNameFragment"
+            app:enterAnim="@anim/side_in_right"
+            app:exitAnim="@anim/side_out_left"
+            app:popEnterAnim="@anim/side_in_left"
+            app:popExitAnim="@anim/side_out_right" />
     </fragment>
     <fragment
         android:id="@+id/womanNameFragment"
@@ -30,7 +38,11 @@
         tools:layout="@layout/fragment_woman_name" >
         <action
             android:id="@+id/action_womanNameFragment_to_manNameFragment"
-            app:destination="@id/manNameFragment" />
+            app:destination="@id/manNameFragment"
+            app:enterAnim="@anim/side_in_right"
+            app:exitAnim="@anim/side_out_left"
+            app:popEnterAnim="@anim/side_in_left"
+            app:popExitAnim="@anim/side_out_right" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
