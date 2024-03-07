@@ -6,7 +6,7 @@
     <data>
         <variable
             name="data"
-            type="com.example.domain.model.DomainScore" />
+            type="com.sunghoon.domain.model.DomainScore" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="확률"
-                android:textColor="@color/black"
+                android:textColor="#F06292"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -72,7 +72,7 @@
                 android:text="0"
                 android:textStyle="bold"
                 set_percentage="@{data.percentage}"
-                android:textColor="@color/black"
+                android:textColor="#F06292"
                 android:textSize="15sp" />
         </LinearLayout>
 

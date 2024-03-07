@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace  = "com.example.presentation"
+    namespace  = "com.sunghoon.presentation"
     compileSdk  = 33
 
     defaultConfig {
@@ -55,7 +55,7 @@ dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("com.google.firebase:firebase-database-ktx:20.1.0")
-    implementation("com.google.firebase:firebase-firestore-ktx:24.4.1")
+   implementation("com.google.firebase:firebase-firestore-ktx:24.4.1")
     testImplementation (TestTool.JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_ESPRESSO)

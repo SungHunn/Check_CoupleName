@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace  = "com.example.data"
+    namespace  = "com.sunghoon.data"
     compileSdk  = 33
 
     defaultConfig {

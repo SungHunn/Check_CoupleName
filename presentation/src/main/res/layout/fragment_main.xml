@@ -6,7 +6,7 @@
     <data>
         <variable
             name="fragment"
-            type="com.example.presentation.view.MainFragment" />
+            type="com.sunghoon.presentation.view.MainFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="현재 100% 궁합 커플 현황"
+                android:text="현재 궁합 커플 현황"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:textColor="@color/black"

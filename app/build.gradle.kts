@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace  = "com.example.check_couplename"
+    namespace = "com.sunghoon.check_couplename"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.check_couplename"
+        applicationId = "com.sunghoon.check_couplename"
         minSdk = 33
         targetSdk = 33
         versionCode = 1
@@ -23,13 +23,13 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled  =  false
+            isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
-        sourceCompatibility =  JavaVersion.VERSION_17
-        targetCompatibility  = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
         jvmTarget = "17"
@@ -42,34 +42,34 @@ android {
 
 dependencies {
 
-    implementation (project (":data"))
-    implementation (project (":domain"))
-    implementation (project (":presentation"))
+    implementation(project(":data"))
+    implementation(project(":domain"))
+    implementation(project(":presentation"))
 
-    implementation (KTX.CORE)
-    implementation (AndroidX.APP_COMPAT)
-    implementation (Google.MATERIAL)
-    implementation (AndroidX.CONSTRAINT_LAYOUT)
-    implementation (Firebase.FIREBASE_DATABASE_KTX)
-    implementation (Firebase.FIREBASE_FIRESTORE_KTX)
-    testImplementation (TestTool.JUNIT)
-    androidTestImplementation (TestTool.ANDROID_X_JUNIT)
-    androidTestImplementation (TestTool.ANDROID_X_ESPRESSO)
+    implementation(KTX.CORE)
+    implementation(AndroidX.APP_COMPAT)
+    implementation(Google.MATERIAL)
+    implementation(AndroidX.CONSTRAINT_LAYOUT)
+    implementation(Firebase.FIREBASE_DATABASE_KTX)
+    implementation(Firebase.FIREBASE_FIRESTORE_KTX)
+    testImplementation(TestTool.JUNIT)
+    androidTestImplementation(TestTool.ANDROID_X_JUNIT)
+    androidTestImplementation(TestTool.ANDROID_X_ESPRESSO)
 
     // dager hilt
-    implementation (DaggerHilt.DAGGER_HILT)
-    kapt (DaggerHilt.DAGGER_HILT_COMPILER)
-    kapt (DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
+    implementation(DaggerHilt.DAGGER_HILT)
+    kapt(DaggerHilt.DAGGER_HILT_COMPILER)
+    kapt(DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 
     // Retrofit
-    implementation (Retrofit.RETROFIT)
-    implementation (Retrofit.CONVERTER_GSON)
-    implementation (Retrofit.CONVERTER_JAXB)
+    implementation(Retrofit.RETROFIT)
+    implementation(Retrofit.CONVERTER_GSON)
+    implementation(Retrofit.CONVERTER_JAXB)
 
     //okHttp
-    implementation (OkHttp.OKHTTP)
-    implementation (OkHttp.LOGGING_INTERCEPTOR)
+    implementation(OkHttp.OKHTTP)
+    implementation(OkHttp.LOGGING_INTERCEPTOR)
 
     //datastore
-    implementation (AndroidX.DATASTORE)
+    implementation(AndroidX.DATASTORE)
 }

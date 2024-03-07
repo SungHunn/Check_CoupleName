@@ -6,7 +6,7 @@
     <data>
         <variable
             name="fragment"
-            type="com.example.presentation.view.WomanNameFragment" />
+            type="com.sunghoon.presentation.view.WomanNameFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

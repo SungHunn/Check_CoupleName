@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace  = "com.example.domain"
+    namespace  = "com.sunghoon.domain"
     compileSdk = 33
 
     defaultConfig {
@@ -42,8 +42,8 @@ dependencies {
     testImplementation (TestTool.JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_ESPRESSO)
-    implementation (Firebase.FIREBASE_DATABASE_KTX)
-    implementation (Firebase.FIREBASE_FIRESTORE_KTX)
+   implementation (Firebase.FIREBASE_DATABASE_KTX)
+   implementation (Firebase.FIREBASE_FIRESTORE_KTX)
 
     // Retrofit
     implementation (Retrofit.RETROFIT)

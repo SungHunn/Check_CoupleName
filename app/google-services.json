@@ -10,7 +10,36 @@
       "client_info": {
         "mobilesdk_app_id": "1:463440174342:android:5b73d78a2f8dd4f9069287",
         "android_client_info": {
-          "package_name": "com.example.check_couplename"
+          "package_name": "com.sunghoon.check_couplename"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463440174342-6ioplecm7lou379u78fn6cbuq177j9rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzatnusSZr0nXS6RdzikOsfgrxd1Vlr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463440174342-6ioplecm7lou379u78fn6cbuq177j9rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463440174342:android:59c3cdeff60ae278069287",
+        "android_client_info": {
+          "package_name": "com.sunghoon.check_couplename"
         }
       },
       "oauth_client": [
